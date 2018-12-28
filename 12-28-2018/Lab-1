@@ -1,1 +1,36 @@
-XXX
+Lab-1:
+
+GIT LIFE CYCLE WORKS AT THE BACKEND:
+
+WORKING DIR -> CHANGES DONE -> ADD/REMOVE <-> STAGING AREA -> COMMIT CHANGES -> LOCAL REPO -> REMOTE REPOSITORY
+
+# SYNC THE CODE FROM MASTER TO <ANY-BRANCH>
+
+New Pull Requests:
+$ git branch
+$ touch <file-name>
+$ git status
+$ git add .
+$ git commit -m “Added a test file”
+$ git push origin <branch-name>		
+
+Note:
+The code in the specific branch or the branch in which you were working doesn’t sync with the master branch, 
+So, you need to raise a Pull Request and communicate with your Manager to compare the code and push the changes into master
+
+Go to Git UI:
+Click on “New Pull Requests”
+Cross check the base and compare branches
+Add a valid msg: “Please sync the code for tag0.1”
+Click on “Create Pull Request”
+
+Note:
+Till here DevOps Activity
+
+Manager:
+Click on “Merge pull requests”
+Click on “Confirm merge”
+# Note: Option to remove the remote branch totally depends upon your requirement
+Add a valid msg: “Code conflicts resolves and merge into master”
+Click on Comment
+
