@@ -1,0 +1,14 @@
+$ git log 			: yellow color is for commit with commit ids’
+$ git branch		: list all local branches
+$ git branch -r	: list all the remote branches 
+$ git log - -graph	: history of commits lists at here
+$ git log - -graph - -oneline	: list all in one line
+$ git log - -help	: command details
+
+$ git cat-file -p <commit-id>	: details 
+
+$ git tag			: tags details if present else need to tag
+$ git branch		: cross check the branch before tagging
+$ git tag -a “0.1”	: tag as “0.1” for the current project
+$ git push origin --tags	: tag reflect in remote, check in release
+
