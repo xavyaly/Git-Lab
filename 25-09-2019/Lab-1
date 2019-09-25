@@ -1,0 +1,19 @@
+Create a repository & Delete a repo:
+	Steps to create a repo:
+		Click on repo
+		Enter a unique name
+		Select the public radio button
+		Click on create repository
+		Click on README
+		Click on Commit new file
+	Steps to delete a repo:
+		Click on repository name
+		Click on settings
+		Click on Daner Zone
+		Click on Delete this repository
+		Please type in the name of the repository to confirm. -> like “test-repo”
+		Click on “I understand the consequences, delete this repository”
+		Enter your GIT password
+		Click on Confirm Password
+
+Delete a repository through CLI ? HW
