@@ -1,0 +1,37 @@
+Create a branch, List all the local branches, List all the remote branches, checkout in new branch like: hotfix; Push all the contents from master to new branch called hotfix;
+	Steps:
+		$ git branch					// list all local branches; currently it was showing on master bydefault
+		$ git branch -r				// lists all remote branches
+		$ ls -l						// list all contents
+		$ git branch <branch-name>	// Example: hotfix
+		$ git checkout hotfix			// switched to hotfix branch
+		$ ls -l						// list all the contents from master
+		$ git add .					// add it
+		$ git commit -m “MSG”		// commit it
+		$ git push origin hotfix			// push the changes from local to remote
+									// Cross verify in UI and Local
+	Steps to remove the local branch:
+		$ git branch test				// created a test branch
+		$ git checkout test			// switched to test branch
+		$ git branch					// u r in same branch
+		$ git branch -d <test>			// throws an error:
+									// error: Cannot delete branch 'test' checked out at '/Users/javedalam/Documents/DevOpsLabs/Git'
+		$ git checkout master			// switched to any other branches as per ur wish
+		$ git branch -d test			// Deleted branch test (was a5aeea5).
+		$ git branch					// test branch deleted successfully
+	
+	Steps to remove the remote branch:
+		$ git branch					// standing in master
+		$ git branch hotfix			// created a new branch called hotfix
+		$ git checkout hotfix			// switched to hotfix branch
+		$ ls -l						// list all contents from master
+		$ git add .					// add
+		$ git commit -m “MSG”		// any message
+		$ git push origin hotfix			// should be hotfix else it throws an error
+									// cross verify in UI
+		$ git branch -d hotfix			// removed from local
+		$ git branch					// check in local
+		$ git push origin —delete hotfix	// removed from remote
+		$ git branch -r				// checked for remote branches
+									// cross verify the changes in UI
+
