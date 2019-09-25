@@ -1,0 +1,17 @@
+Create a new directory, Initialise git, Create a new file, Create multiple files
+Do the changes in file via editor, Do the changes via runtime
+Push the changes in remote ?
+	Steps:
+		$ mdkir 25-09-2019		// make a directory
+		$ git init					// initialise git
+		$ touch <file-name>		// create a single file
+		$ touch file{1..6}			// create multiple files
+		$ nano <file-name>		// add some contents via editor
+		$ cat >> files1			// add some contents via runtime, auto saved press ctrl+c
+		$ git branch				// tell where exactly u r standing
+		$ git status				// check the status of those file, should appear in red color, untracked files
+		$ git add .				// become tracked, appears in green color, moved to staging area
+		$ git commit -m “MSG”	// commit the changes
+		$ git push origin master	// push the changes from local to remote
+
+
