@@ -1,6 +1,5 @@
 ls -l 
-ls -ltr
-
+ls -ltra
 
 rmdir
 chmod
