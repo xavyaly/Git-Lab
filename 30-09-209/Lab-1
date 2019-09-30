@@ -1,0 +1,57 @@
+// Without Conflict
+
+List the branches
+Create a new branch	
+Checkout in new branch
+Add some source code in it
+Push the changes 
+Intimate to your Manager/poc/TL to compare the changes and pushed into Master/<Any-Branch>
+Steps:
+	$ git branch
+	$ ls -l
+	$ git branch performance
+	$ git checkout performance 
+	$ ls -l
+	$ cat >> qualcomm-1.txt	// add some contents
+	$ ls -l
+	$ git status
+	$ git branch
+	$ git add .
+	$ git commit -m “<Valid-MSG>”
+	$ git push origin performance	// A automatic Compare and Pull generated
+	
+My requirement:
+Whatever changes I did in performance branch that should be Merge into Master Branch
+	
+UI Work- DevOps Work:
+	// Go to Git UI
+	// Click on “Compare & pull request” which appears in green color
+	// base: & compare: should be cross verified at here
+	// Add the title & comments
+	// Click on “Create pull requests”
+
+// Till here DevOps Works or Developers works 
+
+Manager Works/ TL Works/ POC:
+	// Click on “Merge pull requests”
+	// Add a comment
+	// Click on “Confirm merge”
+	// UI Contents where start appearing perfectly
+	
+//Here manager has an option to remove the performance/<branch>
+	
+
+Next Once We Moved Into Local:
+	$ git branch					// performance
+	$ ls -l						// list all contents perfectly
+	$ git checkout master			// switched to master branch
+	$ ls -l 						// New file was missing
+	$ git pull origin performance	// pull the recent changes from performance
+	$ ls -l						// Synced
+
+// Done with No issues
+
+// Once activity done it’s better to remove the branch
+	$ git branch
+	$ git branch -d <branch-name>
+	$ git push origin - -delete <branch-name>
