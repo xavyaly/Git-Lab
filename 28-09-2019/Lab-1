@@ -1,0 +1,59 @@
+Lab-1:
+
+Create a new branch
+Push the same source as master from the new branch
+	$ git branch				// master
+	$ ls -l					// all contents of master
+	$ git branch preprod		// prepared new branch created
+	$ git checkout preprod		// switched to new branch
+	$ ls -l					// all contents of master
+	$ git add .
+	$ git commit -m “same as master”	//
+	$ git push origin preprod	// 
+							// verify in UI
+
+// Till here we have pushed the same source code as master
+
+Create a new branch 
+Did some changes and push the source code as per requirement into remote
+	$ git branch
+	$ ls -l
+	$ git branch performance
+	$ ls -l
+	$ rm <any-file>				// removed the file which not required
+	$ git add .
+	$ git commit -m “removed unwanted files”
+	$ git push origin performance	
+							// verify in UI
+
+// Till here we have created a new branch and start the activities as per our requirement
+
+Note: In Real time
+No one can do any changes in Master
+We can pull at any moment from master but can’t push in master directly
+
+Your Manager did some changes in master branch and pushed into remote
+
+	$ git branch				// may be u were different branch
+	$ git checkout master		// switched to master branch	
+	$ rm <files>				// removed unwanted files
+	$ touch <file-name>		// created a new called qualcomm and add some contents in a file
+	$ git add .
+	$ git commit -m “added a new file”
+	$ git push origin master
+
+// Till here we have added a file and push the changes into master
+
+My requirement is:
+Switched to any branch
+Pull the recent changes from master
+Push the changes to that specific branch to remote
+	$ git branch						// master
+	$ ls -l							// qualcomm a new has been created
+	$ git checkout <branch-name>		// switched to any branch
+	$ ls -l							// qualcomm file is missing; just for an example; or may be cross verify from UI
+	$ git pull origin <branch-name>		// specify the branch from you want; example master you can take
+	$ git push origin <branch-name>	//
+									// verify in UI; example in performance branch
+
+// Till here we have synced two branches like performance/<branch-name> and master

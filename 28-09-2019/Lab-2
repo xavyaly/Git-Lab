@@ -1,0 +1,18 @@
+General Scenario:
+
+Master would be accessible only the specific person: Manager/Team-Lead
+
+USA:
+Dev1 - X branch
+$ git pull origin Y
+
+Chennai:
+Dev2 - Y branch
+$ git pull origin X
+
+Noida:
+Dev3 - Z branch
+
+$ git init
+$ git pull origin <branch-name>
+
