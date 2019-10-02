@@ -1,1 +1,2 @@
 cat /etc/passwd | grep -v "192.168.0.1"
+ps -ef 
