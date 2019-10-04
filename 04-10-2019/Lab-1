@@ -1,0 +1,117 @@
+With Conflicts:
+
+Created a new branch:
+	$ git branch						: list all the branches; default u r in master
+	$ ls -l							:
+	$ git branch develop				: 
+	$ git branch						: In develop branch
+	$ ls -l							:
+	$ git add .						:
+	$ git commit -m “sync with master”	:
+	$ git push origin develop			: push the changes 
+	
+Switched back to master:
+	$ git checkout master				:
+	$ nano qualcomm-2.txt			: added some commands in line 2
+	$ git add .						:
+	$ git commit -m “<MSG>”			:
+	$ git push origin master			:
+
+Switch back to develop:
+	$ git checkout develop				:
+	$ nano qualcomm-2.txt			: added some different commands in same line 2
+	$ git add .						:
+	$ git commit -m “<MSG>”			:
+	$ git push origin develop			:
+
+// Upto here both branches have same code except a line no: 2 in same file called qualcomm-2.txt
+
+// How to verify the conflicts through pull request:
+
+$ git pull origin master
+From https://github.com/xavyaly/Git
+ * branch            master     -> FETCH_HEAD
+Auto-merging qualcomm-2.txt
+CONFLICT (content): Merge conflict in qualcomm-2.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+--------------------------------—
+
+$ git branch
+  DevOps
+* develop
+  master
+  performance
+
+--------------------------------—
+
+$ cat qualcomm-2.txt 
+cat /etc/passwd | grep -v "192.168.0.1"
+<<<<<<< HEAD
+mkdir 04-10-2018
+=======
+mkdir 04-10-2019
+>>>>>>> a3c8c67f58ba9fd7c8b096eeabb5d92757c81d78
+
+--------------------------------—
+
+// Lets resolve the conflict through UI:
+
+// Raise a “New pull request”
+// Take base: master & compare: develop
+// Add some comment
+// Click on “Create pull requests”
+
+// Till here DevOps works
+
+// Manager Works/ TL Works/ POC:
+	// Click on “Merge pull requests”
+
+	// Resolve Conflicts
+	
+cat /etc/passwd | grep -v "192.168.0.1"
+<<<<<<< develop						// compare branch; should appears like “<<<<<”
+mkdir 04-10-2018
+=======							// 
+mkdir 04-10-2019
+>>>>>>> master						// base branch; should appears like “>>>>>>”
+
+// Edit it by manager to resolve the conflict
+
+cat /etc/passwd | grep -v "192.168.0.1"
+develop
+mkdir 04-10-2019						// Changes done at this line by manager to sync with master
+mkdir 04-10-2019
+master
+
+// Till here Resolve Conflicts from UI
+
+// We face some issue in CLI Local:
+
+// Updated the local file manually with “-f” parameters (-f is for forcefully)
+
+	$ git branch				: develop
+	$ nano qualcomm-2.txt	: updated manually
+	$ git add .				:
+	$ git commit -m “updated”	:
+	$ git push origin develop -f	: forcefully push the changes 
+
+	$ git branch				: master
+	$ git pull origin develop	: pull the changes from develop branch
+
+$ git pull origin develop
+From https://github.com/xavyaly/Git
+ * branch            develop    -> FETCH_HEAD
+Updating a3c8c67..e2d831e
+Fast-forward
+ qualcomm-2.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ mode change 100644 => 100755 qualcomm-2.txt
+
+	$ nano qualcomm-2.txt	: updated manually
+	$ git add .				:
+	$ git commit -m “updated”	:
+	$ git push origin develop -f	: forcefully push the changes 
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/xavyaly/Git.git
+   d6b9c60..e2d831e  master -> master
