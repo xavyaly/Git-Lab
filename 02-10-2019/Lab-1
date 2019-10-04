@@ -1,0 +1,16 @@
+Branching Model:
+https://nvie.com/posts/a-successful-git-branching-model/
+
+Tag: Depends 
+	0.1 or 0.1.1 or 0.1.1.1
+	
+
+How to tag a project:
+
+// Code synced from different branch with master then we tag the project
+
+$ git tag			: tags details if present else need to tag
+$ git branch		: cross check the branch before tagging
+$ git tag -a “0.1”	: tag as “0.1” for the current project
+$ git push origin --tags	: tag reflect in remote, check in release
+
