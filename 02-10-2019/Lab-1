@@ -14,3 +14,10 @@ $ git branch		: cross check the branch before tagging
 $ git tag -a “0.1”	: tag as “0.1” for the current project
 $ git push origin --tags	: tag reflect in remote, check in release
 
+
+// In Future whenever explains try to follow the below standard branch names:
+Master: Default
+Hotfix: Fix the Prod Bug
+Release: Code fix and ready to push in Master to push in Prod
+Develop: Developer generally works in this branch
+Feature: Multiple developer create a feature branch, once done push into Develop branch for further process
