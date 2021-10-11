@@ -1,9 +1,0 @@
-$ git init <project-name> OR git init
-$ git clone https://github.com/xavyaly/shellscripting.git
-$ git branch
-$ git pull 
-$ git status	
-$ git add <file-name> OR git add * OR git add . 
-$ git status 	
-$ git commit -m “committed my changes into Dockerfile”
-$ git push  OR git push origin <current-branch-name>
