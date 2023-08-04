@@ -422,6 +422,35 @@ drwxr-xr-x  13 javedalam  staff  416 Aug  4 20:43 .git
 $ git stash pop
 No stash entries found.
 
+--------------------------------------------------------------------------------------------------------------
+
+# How to create a new repo and push the changes 
+
+# Go to github.com
+# Create a repo with any name
+# Execute the below command from CLI
+# Done
+
+$ git remote add origin <URL>
+OR
+$ git remote add origin https://github.com/xavyaly/testing.git
+$ git remote -v
+origin	https://github.com/xavyaly/testing.git (fetch)
+origin	https://github.com/xavyaly/testing.git (push)
+$ git branch
+* main
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 218 bytes | 218.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/xavyaly/testing.git
+ * [new branch]      main -> main
+
+--------------------------------------------------------------------------------------------------------------
+
+
+
 
 
 
