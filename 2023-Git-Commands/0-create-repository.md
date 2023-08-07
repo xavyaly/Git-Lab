@@ -1,4 +1,4 @@
-# Create a new repository through UI: https://docs.github.com/en/get-started/quickstart/create-a-repo
+# [Create a new repository through UI](https://docs.github.com/en/get-started/quickstart/create-a-repo)
 <!-- 
 In the upper-right corner of any page, use the drop-down menu, and select New repository.
 Type a short, memorable name for your repository. ...
