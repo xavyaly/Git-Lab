@@ -58,10 +58,10 @@ Receiving objects: 100% (3/3), done.
 
 # Shell Script -> repo.sh
 
-echo "aws-aws" >> README.md
+echo "<repo-name>" >> README.md
 git init
 git add README.md 
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/xavyaly/aws-aws.git
+git remote add origin https://github.com/xavyaly/<repo-name>.git
 git push -u origin main
