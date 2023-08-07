@@ -1,4 +1,4 @@
-# [Create a new repository through UI](https://docs.github.com/en/get-started/quickstart/create-a-repo)
+# Create a new repository through UI: https://docs.github.com/en/get-started/quickstart/create-a-repo
 <!-- 
 In the upper-right corner of any page, use the drop-down menu, and select New repository.
 Type a short, memorable name for your repository. ...
@@ -11,11 +11,14 @@ Click Create repository.
 ---------------------------------------------------------------------------------------------
 
 # Create a new repository through CLI
+
+Steps:
+
 In the upper-right corner of any page, use the drop-down menu, and select New repository.
 Type a short, memorable name for your repository. ...
+Click on "create repository"
 
-
-$ echo "aws-sdk" >> README.md
+$ echo "<repo-name>" >> README.md
 
 $ git init
 Initialized empty Git repository in /Users/javedalam/Documents/git/devops/.git/
@@ -29,18 +32,18 @@ $ git commit -m "first commit"
 
 $ git branch -M main
 
-$ git remote add origin https://github.com/xavyaly/aws-sdk.git
+$ git remote add origin https://github.com/xavyaly/<repo-name>.git
 
 $ git push -u origin main
 Enumerating objects: 3, done.
 Counting objects: 100% (3/3), done.
 Writing objects: 100% (3/3), 221 bytes | 221.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-To https://github.com/xavyaly/aws-sdk.git
+To https://github.com/xavyaly/repo-name.git
  * [new branch]      main -> main
 branch 'main' set up to track 'origin/main'.
 
-$ git clone https://github.com/xavyaly/aws-sdk.git
+$ git clone https://github.com/xavyaly/repo-name.git
 Cloning into 'aws-sdk'...
 remote: Enumerating objects: 3, done.
 remote: Counting objects: 100% (3/3), done.
@@ -49,7 +52,7 @@ Receiving objects: 100% (3/3), done.
 
 # Remove the repo if not needed
 # Go to setting and remove 
-# Your repository "xavyaly/testing" was successfully deleted.
+# Your repository "xavyaly/<repo-name>" was successfully deleted.
 
 ---------------------------------------------------------------------------------------------
 
