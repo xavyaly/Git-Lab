@@ -1,4 +1,19 @@
-# Create a repo: "aws-sdk" through UI and follow the below commands from CLI
+# Create a new repository through UI: https://docs.github.com/en/get-started/quickstart/create-a-repo
+<!-- 
+In the upper-right corner of any page, use the drop-down menu, and select New repository.
+Type a short, memorable name for your repository. ...
+Optionally, add a description of your repository. ...
+Choose a repository visibility. ...
+Select Initialize this repository with a README.
+Click Create repository.
+ -->
+
+---------------------------------------------------------------------------------------------
+
+# Create a new repository through CLI
+In the upper-right corner of any page, use the drop-down menu, and select New repository.
+Type a short, memorable name for your repository. ...
+
 
 $ echo "aws-sdk" >> README.md
 
@@ -31,3 +46,19 @@ remote: Enumerating objects: 3, done.
 remote: Counting objects: 100% (3/3), done.
 remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
 Receiving objects: 100% (3/3), done.
+
+# Remove the repo if not needed
+# Go to setting and remove 
+# Your repository "xavyaly/testing" was successfully deleted.
+
+---------------------------------------------------------------------------------------------
+
+# Shell Script -> repo.sh
+
+echo "aws-aws" >> README.md
+git init
+git add README.md 
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/xavyaly/aws-aws.git
+git push -u origin main
