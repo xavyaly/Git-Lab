@@ -64,7 +64,20 @@ remote:
 To https://github.com/xavyaly/git-lab.git
  * [new branch]      feature -> feature
 branch 'feature' set up to track 'origin/feature'.
-$ 
+
+
+# NOTE:
+Switched to github.com UI
+You can see PR has been raised
+Click on "Compare & Pull Request" button
+Add a proper comment 
+Click on "Create Pull Request"
+Next add 1-2 reviewers who can review your code
+Once added, reviewers will get an email to review
+Reviewers landed to your github page and review the code
+It reviewers think your code is valid then he Merge your code 
+Else he/she will reject your code 
+
 $ git branch 
 * feature
   master
