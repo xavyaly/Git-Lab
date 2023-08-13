@@ -1,6 +1,6 @@
 # FORK, CLONE, CHECKOUT, UPSTREAM, LOCAL/REMOTE BRANCH DELETE
 
-$ ls -l 
+$ rm -rf
 total 16
 drwxr-xr-x@  4 javedalam  staff  128 Aug  6 15:09 Architectures
 drwxr-xr-x@  6 javedalam  staff  192 Aug  6 19:29 Lambda-Lab
