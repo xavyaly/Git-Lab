@@ -227,7 +227,3 @@ $
 # MERGE CONFLICT RESOLVE BETWEEN BRANCH AND MASTER
 
     $ git merge <branch-name>
-
-
-# 
-
