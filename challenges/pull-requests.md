@@ -94,5 +94,3 @@ $
 $ git push origin --delete feature 
 To https://github.com/xavyaly/git-lab.git
  - [deleted]         feature
-$ 
-
